@@ -22,6 +22,10 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MXBaseTableRowProtocol;
+@protocol MXBaseTableFooterProtocol;
+@protocol MXBaseTableHeaderProtocol;
+
 @interface MXStaticTableViewController : UITableViewController
 {
     UIBarButtonItem *mx_barButtonAdd;
@@ -32,9 +36,9 @@
 - (void)mx_addNewData;
 
 #pragma mark - Manipulation Data
-- (void)mx_addHeader:(id)header;
+- (void)mx_addHeader:(id<MXBaseTableHeaderProtocol>)header;
 - (void)mx_removeAllHeaders;
-- (void)mx_addFooter:(id)footer;
+- (void)mx_addFooter:(id<MXBaseTableFooterProtocol>)footer;
 - (void)mx_removeAllFooters;
 
 @end

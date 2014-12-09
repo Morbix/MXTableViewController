@@ -44,8 +44,6 @@
 {
     [super viewDidLoad];
     
-    //arrayRows = [NSMutableArray new];
-    //[arrayRows addObject:[NSMutableArray new]];
     baseTableView = [[MXBaseTableView alloc] init];
 
     
