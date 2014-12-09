@@ -25,7 +25,7 @@
 @protocol MXBaseTableHeaderProtocol <NSObject>
 
 @required
-- (CGFloat)getHeaderHeight;
-- (UIView *)getHeaderView;
+- (CGFloat)mx_getHeaderHeight;
+- (UIView *)mx_getHeaderView;
 
 @end

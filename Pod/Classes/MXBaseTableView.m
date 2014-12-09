@@ -68,7 +68,7 @@
 }
 
 #pragma mark - Manipulation Data
-- (void)addRow:(id)object inSection:(int)section
+- (void)mx_addRow:(id)object inSection:(int)section
 {
     while (!(section < self.arraySections.count)) {
         [self.arraySections addObject:[NSMutableArray new]];
@@ -79,29 +79,29 @@
     [self.arraySections[section] addObject:object];
 }
 
-- (void)removeAllRowsInSection:(int)section
+- (void)mx_removeAllRowsInSection:(int)section
 {
     [self validateSection:section];
     
     [self.arraySections[section] removeAllObjects];
 }
 
-- (void)addHeader:(id)header
+- (void)mx_addHeader:(id)header
 {
     [self.arrayHeaders addObject:header];
 }
 
-- (void)removeAllHeaders
+- (void)mx_removeAllHeaders
 {
     [self.arrayHeaders removeAllObjects];
 }
 
-- (void)addFooter:(id)footer
+- (void)mx_addFooter:(id)footer
 {
     [self.arrayFooters addObject:footer];
 }
 
-- (void)removeAllFooters
+- (void)mx_removeAllFooters
 {
     [self.arrayFooters removeAllObjects];
 }
@@ -145,7 +145,7 @@
     
     id<MXBaseTableRowProtocol> row = object;
     
-    return [row getCellIdentifier];
+    return [row mx_getCellIdentifier];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -162,7 +162,7 @@
     NSAssert([cell conformsToProtocol:@protocol(MXBaseTableCellProtocol)], @"[%s] cell(%@) must conform to FBBaseTableCellProtocol", __PRETTY_FUNCTION__, NSStringFromClass([cell class]));
     
     
-    [(id<MXBaseTableCellProtocol>)cell configureCellWithObject:object
+    [(id<MXBaseTableCellProtocol>)cell mx_configureCellWithObject:object
                                                         target:self
                                                      indexPath:indexPath];
     
@@ -189,7 +189,7 @@
     
     id<MXBaseTableRowProtocol> row = object;
     
-    return [row getCellHeight];
+    return [row mx_getCellHeight];
 }
 
 #pragma mark - Headers
@@ -204,7 +204,7 @@
         
         id<MXBaseTableHeaderProtocol> header = object;
         
-        return [header getHeaderHeight];
+        return [header mx_getHeaderHeight];
     }
     
     return 0.1f;
@@ -221,7 +221,7 @@
         
         id<MXBaseTableHeaderProtocol> header = object;
         
-        return [header getHeaderView];
+        return [header mx_getHeaderView];
     }
     
     return [[UIView alloc] initWithFrame:CGRectZero];
@@ -239,7 +239,7 @@
         
         id<MXBaseTableFooterProtocol> header = object;
         
-        return [header getFooterHeight];
+        return [header mx_getFooterHeight];
     }
     
     return 0.1f;
@@ -256,7 +256,7 @@
         
         id<MXBaseTableFooterProtocol> header = object;
         
-        return [header getFooterView];
+        return [header mx_getFooterView];
     }
     
     return [[UIView alloc] initWithFrame:CGRectZero];

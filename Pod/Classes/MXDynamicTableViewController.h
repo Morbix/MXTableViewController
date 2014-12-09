@@ -24,19 +24,19 @@
 
 @interface MXDynamicTableViewController : UITableViewController
 {
-    UIBarButtonItem *barButtonAdd;
-    UIBarButtonItem *barButtonRefresh;
+    UIBarButtonItem *mx_barButtonAdd;
+    UIBarButtonItem *mx_barButtonRefresh;
 }
 
-- (void)reloadData;
-- (void)addNewData;
+- (void)mx_reloadData;
+- (void)mx_addNewData;
 
 #pragma mark - Manipulation Data
-- (void)addRow:(id)object inSection:(int)section;
-- (void)removeAllRowsInSection:(int)section;
-- (void)addHeader:(id)header;
-- (void)removeAllHeaders;
-- (void)addFooter:(id)footer;
-- (void)removeAllFooters;
+- (void)mx_addRow:(id)object inSection:(int)section;
+- (void)mx_removeAllRowsInSection:(int)section;
+- (void)mx_addHeader:(id)header;
+- (void)mx_removeAllHeaders;
+- (void)mx_addFooter:(id)footer;
+- (void)mx_removeAllFooters;
 
 @end

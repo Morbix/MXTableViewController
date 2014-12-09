@@ -25,6 +25,6 @@
 @protocol MXBaseTableCellProtocol <NSObject>
 
 @required
-- (void)configureCellWithObject:(id)object target:(id)target indexPath:(NSIndexPath *)indexPath;
+- (void)mx_configureCellWithObject:(id)object target:(id)target indexPath:(NSIndexPath *)indexPath;
 
 @end

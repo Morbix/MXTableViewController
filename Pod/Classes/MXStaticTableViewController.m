@@ -58,12 +58,12 @@
 #pragma mark - Métodos
 - (void)configBarButtons
 {
-    barButtonAdd     = [[UIBarButtonItem alloc]
+    mx_barButtonAdd     = [[UIBarButtonItem alloc]
                         initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                         target:self
-                        action:@selector(addNewData)];
+                        action:@selector(mx_addNewData)];
     
-    barButtonRefresh = [[UIBarButtonItem alloc]
+    mx_barButtonRefresh = [[UIBarButtonItem alloc]
                         initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
                         target:self
                         action:@selector(barButtonRefreshTouched)];
@@ -71,38 +71,38 @@
 
 - (void)barButtonRefreshTouched
 {
-    [self reloadData];
+    [self mx_reloadData];
 }
 
-- (void)reloadData
+- (void)mx_reloadData
 {
     NSLog(@"[%s] reloadNetworkData not implemented", __PRETTY_FUNCTION__);
 }
 
-- (void)addNewData
+- (void)mx_addNewData
 {
     NSLog(@"[%s] addNewData not implemented", __PRETTY_FUNCTION__);
 }
 
 #pragma mark - Manipulation Data
-- (void)addHeader:(id)header
+- (void)mx_addHeader:(id)header
 {
-    [baseTableView addHeader:header];
+    [baseTableView mx_addHeader:header];
 }
 
-- (void)removeAllHeaders
+- (void)mx_removeAllHeaders
 {
-    [baseTableView removeAllHeaders];
+    [baseTableView mx_removeAllHeaders];
 }
 
-- (void)addFooter:(id)footer
+- (void)mx_addFooter:(id)footer
 {
-    [baseTableView addFooter:footer];
+    [baseTableView mx_addFooter:footer];
 }
 
-- (void)removeAllFooters
+- (void)mx_removeAllFooters
 {
-    [baseTableView removeAllFooters];
+    [baseTableView mx_removeAllFooters];
 }
 
 #pragma mark - Headers

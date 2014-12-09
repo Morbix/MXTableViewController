@@ -25,7 +25,7 @@
 @protocol MXBaseTableRowProtocol <NSObject>
 
 @required
-- (CGFloat)getCellHeight;
-- (NSString *)getCellIdentifier;
+- (CGFloat)mx_getCellHeight;
+- (NSString *)mx_getCellIdentifier;
 
 @end

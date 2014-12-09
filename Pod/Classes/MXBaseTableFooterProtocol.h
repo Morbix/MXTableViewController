@@ -25,7 +25,7 @@
 @protocol MXBaseTableFooterProtocol <NSObject>
 
 @required
-- (CGFloat)getFooterHeight;
-- (UIView *)getFooterView;
+- (CGFloat)mx_getFooterHeight;
+- (UIView *)mx_getFooterView;
 
 @end
