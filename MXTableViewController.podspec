@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "MXTableViewController"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "An abstration of UITableView and UITableViewController"
   s.description      = <<-DESC
                        MXTableViewController is a library to make the UITableView and UITableViewController implementation easier.
