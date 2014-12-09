@@ -1,0 +1,14 @@
+PODS:
+  - MXTableViewController (0.1.0)
+
+DEPENDENCIES:
+  - MXTableViewController (from `../`)
+
+EXTERNAL SOURCES:
+  MXTableViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MXTableViewController: 9811a5a101bdb41ab26c813db03ab039fbe279f6
+
+COCOAPODS: 0.34.4
