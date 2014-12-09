@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/MXBaseTableRowProtocol.h

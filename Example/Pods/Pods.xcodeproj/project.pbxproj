@@ -1,882 +1,2063 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		006EC6A4A236EA488169BE30 /* MXDynamicTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F3482EE01E3872CDBBFD9D /* MXDynamicTableViewController.h */; };
-		06EDFDB1E44037A27FB9BD38 /* MXBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB525D042D3478175CC442A9 /* MXBaseTableView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		1F673F6F2EFBBE22FF175C7E /* MXBaseTableHeaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E90ACEE67B1D11F9364C2649 /* MXBaseTableHeaderProtocol.h */; };
-		2319C23CF18CC03962421876 /* MXDynamicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4261E076796BD1601410C1D3 /* MXDynamicTableViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		24DFF01CB93A21D50D6DA026 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D93DC73E2B86C0FD24BC6C /* Foundation.framework */; };
-		302BF74C39467643DA9B81A0 /* Pods-Tests-MXTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4975AB06AB09E733978D7FEE /* Pods-Tests-MXTableViewController-dummy.m */; };
-		330A3F41165D0630FAC0BA82 /* MXBaseTableHeaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E90ACEE67B1D11F9364C2649 /* MXBaseTableHeaderProtocol.h */; };
-		3720CDA2423994140D138823 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F115ACD78DA3B362E729D27A /* UIKit.framework */; };
-		4610B8512BD40B40EDE41FE1 /* MXBaseTableFooterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE102D4611F739709D59425F /* MXBaseTableFooterProtocol.h */; };
-		57A837A2008C8753E7E5B016 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D93DC73E2B86C0FD24BC6C /* Foundation.framework */; };
-		590B04E92F82C2A753364B1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F115ACD78DA3B362E729D27A /* UIKit.framework */; };
-		599E852345DEF9A8BC9E74B7 /* MXBaseTableCellProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B718413D2FDAC54FF9A1A46 /* MXBaseTableCellProtocol.h */; };
-		6FA9213BD4245E782D87BA39 /* MXStaticTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AD83EE456E94E14FCA853EA /* MXStaticTableViewController.h */; };
-		7119FE6725D5047F1F5A1B18 /* MXDynamicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4261E076796BD1601410C1D3 /* MXDynamicTableViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		832C3596B4AB55424419AE65 /* Pods-MXTableViewController-MXTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0312E4CC84CCF303A9170E /* Pods-MXTableViewController-MXTableViewController-dummy.m */; };
-		8A1E0B26E987AF405A22819C /* MXStaticTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AD83EE456E94E14FCA853EA /* MXStaticTableViewController.h */; };
-		9D2F4C84A290EDA0D85C66A6 /* MXStaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54AAC96FA0D611D847317C5 /* MXStaticTableViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		A2038F7B821BA95735A1D4B9 /* MXDynamicTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F3482EE01E3872CDBBFD9D /* MXDynamicTableViewController.h */; };
-		A8980DCA42138C1468C2B9CA /* MXStaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54AAC96FA0D611D847317C5 /* MXStaticTableViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		B23C24D576018F37395101E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D93DC73E2B86C0FD24BC6C /* Foundation.framework */; };
-		B4D535DAB6EC74BC8035D7D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D93DC73E2B86C0FD24BC6C /* Foundation.framework */; };
-		BC6261706C7E7B6C1407081F /* Pods-MXTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7AC7ECDC67B9A877FC11FB /* Pods-MXTableViewController-dummy.m */; };
-		BDD4B06DC03835CE286E892F /* MXBaseTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B4F93397C5A44160D83490 /* MXBaseTableView.h */; };
-		BE89147AB25E32A2BA565CBF /* MXBaseTableFooterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE102D4611F739709D59425F /* MXBaseTableFooterProtocol.h */; };
-		C15094463A701D5A0EACC396 /* MXBaseTableRowProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B7C2A79A6C3D90F16E6E6DD /* MXBaseTableRowProtocol.h */; };
-		C5BC65C6232BA8734876DE65 /* MXBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB525D042D3478175CC442A9 /* MXBaseTableView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		D2D3832E4A9AC0D876807F27 /* MXBaseTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B4F93397C5A44160D83490 /* MXBaseTableView.h */; };
-		E5FFD2C9F9809816F69F3964 /* MXBaseTableCellProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B718413D2FDAC54FF9A1A46 /* MXBaseTableCellProtocol.h */; };
-		E8FBDC0E882B07675871DF38 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CFC3B0D7435AA1B1D3D644 /* Pods-Tests-dummy.m */; };
-		EEC0F56CBD39E9F61B62A3A9 /* MXBaseTableRowProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B7C2A79A6C3D90F16E6E6DD /* MXBaseTableRowProtocol.h */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		ADF962523378BA267E76B0E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8088626DE62201210E17BEE0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 77458EF4D043DCE722124CE4;
-			remoteInfo = "Pods-Tests-MXTableViewController";
-		};
-		B7791F876E9EB65C85B4583A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8088626DE62201210E17BEE0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DBB22E4C6DEEE3A22CFB7652;
-			remoteInfo = "Pods-MXTableViewController-MXTableViewController";
-		};
-		C3B1A066F1641DAC2F93A22C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8088626DE62201210E17BEE0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 730890A47FA020CE916E1E68;
-			remoteInfo = MXTableViewController;
-		};
-		F3FBB6BCFAEF78D44AC4562F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8088626DE62201210E17BEE0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 730890A47FA020CE916E1E68;
-			remoteInfo = MXTableViewController;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		02B767CF634A1AB12EF80250 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0B65E4932A4056850DB19FC5 /* Pods-Tests-MXTableViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-MXTableViewController.xcconfig"; path = "../Pods-Tests-MXTableViewController/Pods-Tests-MXTableViewController.xcconfig"; sourceTree = "<group>"; };
-		0D37DE223EC49D3E748742DD /* MXTableViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MXTableViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B7C2A79A6C3D90F16E6E6DD /* MXBaseTableRowProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXBaseTableRowProtocol.h; path = Pod/Classes/MXBaseTableRowProtocol.h; sourceTree = "<group>"; };
-		258F475300A278C713C83FA2 /* Pods-MXTableViewController-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MXTableViewController-environment.h"; sourceTree = "<group>"; };
-		26D28AA002E3DF9D413146DD /* Pods-MXTableViewController-MXTableViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MXTableViewController-MXTableViewController-prefix.pch"; sourceTree = "<group>"; };
-		34B4F93397C5A44160D83490 /* MXBaseTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXBaseTableView.h; path = Pod/Classes/MXBaseTableView.h; sourceTree = "<group>"; };
-		37D93DC73E2B86C0FD24BC6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3AD83EE456E94E14FCA853EA /* MXStaticTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXStaticTableViewController.h; path = Pod/Classes/MXStaticTableViewController.h; sourceTree = "<group>"; };
-		3C0312E4CC84CCF303A9170E /* Pods-MXTableViewController-MXTableViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MXTableViewController-MXTableViewController-dummy.m"; sourceTree = "<group>"; };
-		3E5BF64F90EB9ACDE04A65F4 /* libPods-MXTableViewController-MXTableViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXTableViewController-MXTableViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4261E076796BD1601410C1D3 /* MXDynamicTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXDynamicTableViewController.m; path = Pod/Classes/MXDynamicTableViewController.m; sourceTree = "<group>"; };
-		431E5BA0329130D863ACE496 /* Pods-MXTableViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MXTableViewController.debug.xcconfig"; sourceTree = "<group>"; };
-		4392D7D327DEFE27BACD2141 /* Pods-MXTableViewController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MXTableViewController-resources.sh"; sourceTree = "<group>"; };
-		4975AB06AB09E733978D7FEE /* Pods-Tests-MXTableViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-MXTableViewController-dummy.m"; path = "../Pods-Tests-MXTableViewController/Pods-Tests-MXTableViewController-dummy.m"; sourceTree = "<group>"; };
-		49E043F8A5A1A7A03D23340D /* Pods-MXTableViewController-MXTableViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MXTableViewController-MXTableViewController-Private.xcconfig"; sourceTree = "<group>"; };
-		49E16DAA98E90BEEF0F5043E /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
-		4C9088FB7C85982608D73858 /* Pods-MXTableViewController-MXTableViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MXTableViewController-MXTableViewController.xcconfig"; sourceTree = "<group>"; };
-		55CFC3B0D7435AA1B1D3D644 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
-		6CAE53FB9666D21D0B6A5FEC /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		70F3482EE01E3872CDBBFD9D /* MXDynamicTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXDynamicTableViewController.h; path = Pod/Classes/MXDynamicTableViewController.h; sourceTree = "<group>"; };
-		72F4823FC6F547C44B2033C8 /* Pods-MXTableViewController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MXTableViewController-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7E33D16A20C31A1D13502A63 /* Pods-MXTableViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MXTableViewController.release.xcconfig"; sourceTree = "<group>"; };
-		80BAA0DD1189909CEC2C5C9E /* Pods-Tests-MXTableViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-MXTableViewController-prefix.pch"; path = "../Pods-Tests-MXTableViewController/Pods-Tests-MXTableViewController-prefix.pch"; sourceTree = "<group>"; };
-		8B718413D2FDAC54FF9A1A46 /* MXBaseTableCellProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXBaseTableCellProtocol.h; path = Pod/Classes/MXBaseTableCellProtocol.h; sourceTree = "<group>"; };
-		8F06C36713370DCA0D2F825F /* Pods-Tests-MXTableViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-MXTableViewController-Private.xcconfig"; path = "../Pods-Tests-MXTableViewController/Pods-Tests-MXTableViewController-Private.xcconfig"; sourceTree = "<group>"; };
-		9B38A47D62D606CFB654E2C1 /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
-		9BD9F1E1DFB6FF20B199A9B9 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B54AAC96FA0D611D847317C5 /* MXStaticTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXStaticTableViewController.m; path = Pod/Classes/MXStaticTableViewController.m; sourceTree = "<group>"; };
-		CE102D4611F739709D59425F /* MXBaseTableFooterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXBaseTableFooterProtocol.h; path = Pod/Classes/MXBaseTableFooterProtocol.h; sourceTree = "<group>"; };
-		DA872F61D4D50F6EC7B8F6AC /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DB525D042D3478175CC442A9 /* MXBaseTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXBaseTableView.m; path = Pod/Classes/MXBaseTableView.m; sourceTree = "<group>"; };
-		E0AAB2A825930A66BC951066 /* Pods-MXTableViewController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MXTableViewController-acknowledgements.plist"; sourceTree = "<group>"; };
-		E90ACEE67B1D11F9364C2649 /* MXBaseTableHeaderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXBaseTableHeaderProtocol.h; path = Pod/Classes/MXBaseTableHeaderProtocol.h; sourceTree = "<group>"; };
-		F115ACD78DA3B362E729D27A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F5E38E1901656672DF0188CB /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F90E774F09C7FE2CC2368486 /* libPods-Tests-MXTableViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-MXTableViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC7AC7ECDC67B9A877FC11FB /* Pods-MXTableViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MXTableViewController-dummy.m"; sourceTree = "<group>"; };
-		FFB9F6F9C2D321B7095EB2F0 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FFC6C87138F76BDDC1F26FB7 /* libPods-MXTableViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXTableViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		0D9031D62D46B613580D0057 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B23C24D576018F37395101E0 /* Foundation.framework in Frameworks */,
-				3720CDA2423994140D138823 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		135D54A75CAAF647171A83A0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		61E55981E19797A3AF8D6404 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B4D535DAB6EC74BC8035D7D3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BAA0D6FAB2B9247A951DDD49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				57A837A2008C8753E7E5B016 /* Foundation.framework in Frameworks */,
-				590B04E92F82C2A753364B1C /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD706715AE7D3642328FB446 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				24DFF01CB93A21D50D6DA026 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		0C49003E7FB753E07D30C6C7 /* Pods-MXTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				72F4823FC6F547C44B2033C8 /* Pods-MXTableViewController-acknowledgements.markdown */,
-				E0AAB2A825930A66BC951066 /* Pods-MXTableViewController-acknowledgements.plist */,
-				FC7AC7ECDC67B9A877FC11FB /* Pods-MXTableViewController-dummy.m */,
-				258F475300A278C713C83FA2 /* Pods-MXTableViewController-environment.h */,
-				4392D7D327DEFE27BACD2141 /* Pods-MXTableViewController-resources.sh */,
-				431E5BA0329130D863ACE496 /* Pods-MXTableViewController.debug.xcconfig */,
-				7E33D16A20C31A1D13502A63 /* Pods-MXTableViewController.release.xcconfig */,
-			);
-			name = "Pods-MXTableViewController";
-			path = "Target Support Files/Pods-MXTableViewController";
-			sourceTree = "<group>";
-		};
-		385806C6356ECDBAFF5E075D /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0C49003E7FB753E07D30C6C7 /* Pods-MXTableViewController */,
-				42C8CB712A3B54BE92C27430 /* Pods-Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		4075E97FB4D558B2CC96765E /* MXTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				8B718413D2FDAC54FF9A1A46 /* MXBaseTableCellProtocol.h */,
-				CE102D4611F739709D59425F /* MXBaseTableFooterProtocol.h */,
-				E90ACEE67B1D11F9364C2649 /* MXBaseTableHeaderProtocol.h */,
-				1B7C2A79A6C3D90F16E6E6DD /* MXBaseTableRowProtocol.h */,
-				34B4F93397C5A44160D83490 /* MXBaseTableView.h */,
-				DB525D042D3478175CC442A9 /* MXBaseTableView.m */,
-				70F3482EE01E3872CDBBFD9D /* MXDynamicTableViewController.h */,
-				4261E076796BD1601410C1D3 /* MXDynamicTableViewController.m */,
-				3AD83EE456E94E14FCA853EA /* MXStaticTableViewController.h */,
-				B54AAC96FA0D611D847317C5 /* MXStaticTableViewController.m */,
-				AAAD26009D38D5F2EE309198 /* Support Files */,
-			);
-			name = MXTableViewController;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		42C8CB712A3B54BE92C27430 /* Pods-Tests */ = {
-			isa = PBXGroup;
-			children = (
-				6CAE53FB9666D21D0B6A5FEC /* Pods-Tests-acknowledgements.markdown */,
-				02B767CF634A1AB12EF80250 /* Pods-Tests-acknowledgements.plist */,
-				55CFC3B0D7435AA1B1D3D644 /* Pods-Tests-dummy.m */,
-				49E16DAA98E90BEEF0F5043E /* Pods-Tests-environment.h */,
-				9B38A47D62D606CFB654E2C1 /* Pods-Tests-resources.sh */,
-				DA872F61D4D50F6EC7B8F6AC /* Pods-Tests.debug.xcconfig */,
-				FFB9F6F9C2D321B7095EB2F0 /* Pods-Tests.release.xcconfig */,
-			);
-			name = "Pods-Tests";
-			path = "Target Support Files/Pods-Tests";
-			sourceTree = "<group>";
-		};
-		6689FABB2286F013DC21B719 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4075E97FB4D558B2CC96765E /* MXTableViewController */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		A14759E751FC69D68C58DBFA = {
-			isa = PBXGroup;
-			children = (
-				F5E38E1901656672DF0188CB /* Podfile */,
-				6689FABB2286F013DC21B719 /* Development Pods */,
-				BA2A37B3A48BE1D333607434 /* Frameworks */,
-				BB8490CB109E76E567247283 /* Products */,
-				385806C6356ECDBAFF5E075D /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		AAAD26009D38D5F2EE309198 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4C9088FB7C85982608D73858 /* Pods-MXTableViewController-MXTableViewController.xcconfig */,
-				49E043F8A5A1A7A03D23340D /* Pods-MXTableViewController-MXTableViewController-Private.xcconfig */,
-				3C0312E4CC84CCF303A9170E /* Pods-MXTableViewController-MXTableViewController-dummy.m */,
-				26D28AA002E3DF9D413146DD /* Pods-MXTableViewController-MXTableViewController-prefix.pch */,
-				0B65E4932A4056850DB19FC5 /* Pods-Tests-MXTableViewController.xcconfig */,
-				8F06C36713370DCA0D2F825F /* Pods-Tests-MXTableViewController-Private.xcconfig */,
-				4975AB06AB09E733978D7FEE /* Pods-Tests-MXTableViewController-dummy.m */,
-				80BAA0DD1189909CEC2C5C9E /* Pods-Tests-MXTableViewController-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-MXTableViewController-MXTableViewController";
-			sourceTree = "<group>";
-		};
-		B0A2675F6A2F9E498849B7D4 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				37D93DC73E2B86C0FD24BC6C /* Foundation.framework */,
-				F115ACD78DA3B362E729D27A /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		BA2A37B3A48BE1D333607434 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B0A2675F6A2F9E498849B7D4 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BB8490CB109E76E567247283 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0D37DE223EC49D3E748742DD /* MXTableViewController.bundle */,
-				FFC6C87138F76BDDC1F26FB7 /* libPods-MXTableViewController.a */,
-				3E5BF64F90EB9ACDE04A65F4 /* libPods-MXTableViewController-MXTableViewController.a */,
-				9BD9F1E1DFB6FF20B199A9B9 /* libPods-Tests.a */,
-				F90E774F09C7FE2CC2368486 /* libPods-Tests-MXTableViewController.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		5C62CE0B25F19F36D648F346 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5FFD2C9F9809816F69F3964 /* MXBaseTableCellProtocol.h in Headers */,
-				BE89147AB25E32A2BA565CBF /* MXBaseTableFooterProtocol.h in Headers */,
-				1F673F6F2EFBBE22FF175C7E /* MXBaseTableHeaderProtocol.h in Headers */,
-				C15094463A701D5A0EACC396 /* MXBaseTableRowProtocol.h in Headers */,
-				BDD4B06DC03835CE286E892F /* MXBaseTableView.h in Headers */,
-				A2038F7B821BA95735A1D4B9 /* MXDynamicTableViewController.h in Headers */,
-				6FA9213BD4245E782D87BA39 /* MXStaticTableViewController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C616DB54FD12F0553A926687 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				599E852345DEF9A8BC9E74B7 /* MXBaseTableCellProtocol.h in Headers */,
-				4610B8512BD40B40EDE41FE1 /* MXBaseTableFooterProtocol.h in Headers */,
-				330A3F41165D0630FAC0BA82 /* MXBaseTableHeaderProtocol.h in Headers */,
-				EEC0F56CBD39E9F61B62A3A9 /* MXBaseTableRowProtocol.h in Headers */,
-				D2D3832E4A9AC0D876807F27 /* MXBaseTableView.h in Headers */,
-				006EC6A4A236EA488169BE30 /* MXDynamicTableViewController.h in Headers */,
-				8A1E0B26E987AF405A22819C /* MXStaticTableViewController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		4D3E09D03E3A24FF0BBFA8E3 /* Pods-Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DAB30F03A610B0FDFE3D10DF /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
-			buildPhases = (
-				AA926D5759270C5CCB02F87C /* Sources */,
-				61E55981E19797A3AF8D6404 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				54FFCC166DF131DF5E9F7FDE /* PBXTargetDependency */,
-			);
-			name = "Pods-Tests";
-			productName = "Pods-Tests";
-			productReference = 9BD9F1E1DFB6FF20B199A9B9 /* libPods-Tests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		730890A47FA020CE916E1E68 /* MXTableViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7F1A03AA1096DC35E762BBE2 /* Build configuration list for PBXNativeTarget "MXTableViewController" */;
-			buildPhases = (
-				1FF8D8CDE35A1011791F4587 /* Sources */,
-				135D54A75CAAF647171A83A0 /* Frameworks */,
-				83175FE32880B618077D89F6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MXTableViewController;
-			productName = MXTableViewController;
-			productReference = 0D37DE223EC49D3E748742DD /* MXTableViewController.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		77458EF4D043DCE722124CE4 /* Pods-Tests-MXTableViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FCC840C031475BECFD6D9C76 /* Build configuration list for PBXNativeTarget "Pods-Tests-MXTableViewController" */;
-			buildPhases = (
-				3B26CCB096431DBC4B5357EF /* Sources */,
-				BAA0D6FAB2B9247A951DDD49 /* Frameworks */,
-				5C62CE0B25F19F36D648F346 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6106816D69B4E8C6C07FAB16 /* PBXTargetDependency */,
-			);
-			name = "Pods-Tests-MXTableViewController";
-			productName = "Pods-Tests-MXTableViewController";
-			productReference = F90E774F09C7FE2CC2368486 /* libPods-Tests-MXTableViewController.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		DBB22E4C6DEEE3A22CFB7652 /* Pods-MXTableViewController-MXTableViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0BF805F986AB9760909D7DED /* Build configuration list for PBXNativeTarget "Pods-MXTableViewController-MXTableViewController" */;
-			buildPhases = (
-				3D7EC387A5BA33972CE94199 /* Sources */,
-				0D9031D62D46B613580D0057 /* Frameworks */,
-				C616DB54FD12F0553A926687 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D54FC1AF393B75ACFC3BFEE5 /* PBXTargetDependency */,
-			);
-			name = "Pods-MXTableViewController-MXTableViewController";
-			productName = "Pods-MXTableViewController-MXTableViewController";
-			productReference = 3E5BF64F90EB9ACDE04A65F4 /* libPods-MXTableViewController-MXTableViewController.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		FE49CDB297B3154157402E4D /* Pods-MXTableViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4315AF56A8AC22F353F9AEFC /* Build configuration list for PBXNativeTarget "Pods-MXTableViewController" */;
-			buildPhases = (
-				155EFF3F14FB6AC142C74EE0 /* Sources */,
-				FD706715AE7D3642328FB446 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				27A909B245ED6F34749A90F2 /* PBXTargetDependency */,
-			);
-			name = "Pods-MXTableViewController";
-			productName = "Pods-MXTableViewController";
-			productReference = FFC6C87138F76BDDC1F26FB7 /* libPods-MXTableViewController.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		8088626DE62201210E17BEE0 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0510;
-			};
-			buildConfigurationList = 281D228E9C5A73E52A87E059 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = A14759E751FC69D68C58DBFA;
-			productRefGroup = BB8490CB109E76E567247283 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				730890A47FA020CE916E1E68 /* MXTableViewController */,
-				FE49CDB297B3154157402E4D /* Pods-MXTableViewController */,
-				DBB22E4C6DEEE3A22CFB7652 /* Pods-MXTableViewController-MXTableViewController */,
-				4D3E09D03E3A24FF0BBFA8E3 /* Pods-Tests */,
-				77458EF4D043DCE722124CE4 /* Pods-Tests-MXTableViewController */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		83175FE32880B618077D89F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		155EFF3F14FB6AC142C74EE0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BC6261706C7E7B6C1407081F /* Pods-MXTableViewController-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FF8D8CDE35A1011791F4587 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B26CCB096431DBC4B5357EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C5BC65C6232BA8734876DE65 /* MXBaseTableView.m in Sources */,
-				7119FE6725D5047F1F5A1B18 /* MXDynamicTableViewController.m in Sources */,
-				9D2F4C84A290EDA0D85C66A6 /* MXStaticTableViewController.m in Sources */,
-				302BF74C39467643DA9B81A0 /* Pods-Tests-MXTableViewController-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D7EC387A5BA33972CE94199 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				06EDFDB1E44037A27FB9BD38 /* MXBaseTableView.m in Sources */,
-				2319C23CF18CC03962421876 /* MXDynamicTableViewController.m in Sources */,
-				A8980DCA42138C1468C2B9CA /* MXStaticTableViewController.m in Sources */,
-				832C3596B4AB55424419AE65 /* Pods-MXTableViewController-MXTableViewController-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA926D5759270C5CCB02F87C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8FBDC0E882B07675871DF38 /* Pods-Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		27A909B245ED6F34749A90F2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DBB22E4C6DEEE3A22CFB7652 /* Pods-MXTableViewController-MXTableViewController */;
-			targetProxy = B7791F876E9EB65C85B4583A /* PBXContainerItemProxy */;
-		};
-		54FFCC166DF131DF5E9F7FDE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 77458EF4D043DCE722124CE4 /* Pods-Tests-MXTableViewController */;
-			targetProxy = ADF962523378BA267E76B0E5 /* PBXContainerItemProxy */;
-		};
-		6106816D69B4E8C6C07FAB16 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 730890A47FA020CE916E1E68 /* MXTableViewController */;
-			targetProxy = C3B1A066F1641DAC2F93A22C /* PBXContainerItemProxy */;
-		};
-		D54FC1AF393B75ACFC3BFEE5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 730890A47FA020CE916E1E68 /* MXTableViewController */;
-			targetProxy = F3FBB6BCFAEF78D44AC4562F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		04A6BAFF8F3C93ED81E51447 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		2B9970E63991EC05FD3834BA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		549405941F627D2766A60798 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA872F61D4D50F6EC7B8F6AC /* Pods-Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		5B3F062224148C2FE923DDB2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFB9F6F9C2D321B7095EB2F0 /* Pods-Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5F21AFAE7FA0172AB329592F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-			};
-			name = Debug;
-		};
-		892F7A63CB5AE7B2B671455E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E33D16A20C31A1D13502A63 /* Pods-MXTableViewController.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		AAB87BC1924E4E4EE29423D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 431E5BA0329130D863ACE496 /* Pods-MXTableViewController.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		AABEF3800037CB9FA2EC8B92 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49E043F8A5A1A7A03D23340D /* Pods-MXTableViewController-MXTableViewController-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MXTableViewController-MXTableViewController/Pods-MXTableViewController-MXTableViewController-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		AAC309CE3CC7D1105A252699 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F06C36713370DCA0D2F825F /* Pods-Tests-MXTableViewController-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-MXTableViewController/Pods-Tests-MXTableViewController-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		BA54EE4265EB113CA835EEDF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49E043F8A5A1A7A03D23340D /* Pods-MXTableViewController-MXTableViewController-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MXTableViewController-MXTableViewController/Pods-MXTableViewController-MXTableViewController-prefix.pch";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C6C23A231C454DCDAC4FCAA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D4626EDD2EAEF51FA0049A9E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F06C36713370DCA0D2F825F /* Pods-Tests-MXTableViewController-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-MXTableViewController/Pods-Tests-MXTableViewController-prefix.pch";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		0BF805F986AB9760909D7DED /* Build configuration list for PBXNativeTarget "Pods-MXTableViewController-MXTableViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AABEF3800037CB9FA2EC8B92 /* Debug */,
-				BA54EE4265EB113CA835EEDF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		281D228E9C5A73E52A87E059 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F21AFAE7FA0172AB329592F /* Debug */,
-				C6C23A231C454DCDAC4FCAA0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4315AF56A8AC22F353F9AEFC /* Build configuration list for PBXNativeTarget "Pods-MXTableViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AAB87BC1924E4E4EE29423D3 /* Debug */,
-				892F7A63CB5AE7B2B671455E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7F1A03AA1096DC35E762BBE2 /* Build configuration list for PBXNativeTarget "MXTableViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04A6BAFF8F3C93ED81E51447 /* Debug */,
-				2B9970E63991EC05FD3834BA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DAB30F03A610B0FDFE3D10DF /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				549405941F627D2766A60798 /* Debug */,
-				5B3F062224148C2FE923DDB2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FCC840C031475BECFD6D9C76 /* Build configuration list for PBXNativeTarget "Pods-Tests-MXTableViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AAC309CE3CC7D1105A252699 /* Debug */,
-				D4626EDD2EAEF51FA0049A9E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 8088626DE62201210E17BEE0 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0698D7CE8D361D3521C67235</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>763E04228BCA578A2CB03470</string>
+				<string>D77E79B08716FEC0DD6FDED5</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>06C1EF7F428F59D3048D40C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9659CF0787573AA4ECF78F9A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>10FFD92005B1B67376C4D369</key>
+		<dict>
+			<key>fileRef</key>
+			<string>72AC3B0C01AA8B9DFAE85544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>17FFF0F0721F0F3F63A87083</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7C9BA5E5E0D7860E6C9BB0EF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>18FB9AADBED4E92DA29D73C6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-MXTableViewController-MXTableViewController-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>19A5CFA46843254E0A0E6602</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7C9BA5E5E0D7860E6C9BB0EF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1A45A353BCFCDF2CD1A05653</key>
+		<dict>
+			<key>fileRef</key>
+			<string>70B17FECA527D15B77E2D093</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1C661570F13F4C4D390DC998</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9659CF0787573AA4ECF78F9A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>20105EF7AB551D87FF29E86C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9A19675BDF7B0DEF4439266B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>250E64B92A6C07FD3B85EA2E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>264D3D5F52F93F59EECC8DBC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FC3AF8844F30F990C4F39821</string>
+				<string>71AA7FBA78DFCD3AFC346AD8</string>
+				<string>A913BB300241EA8DBEB7BCE8</string>
+				<string>20105EF7AB551D87FF29E86C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>27ED8F219DDAE7306F11BA0B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>39DF7678304F9B69FCF8FFBB</string>
+				<string>F51BC8162613FF1F0B03F936</string>
+				<string>4FDD393FB9262CD45DE9180E</string>
+				<string>821A47D53D282E9400FF49F4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>282654DF3987EF5C0B3A19C7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>293A0D6ACE2272F4A6EA5088</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MXStaticTableViewController.h</string>
+			<key>path</key>
+			<string>Pod/Classes/MXStaticTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2A75EF4C06EDD400956A4A06</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7034C5F3A3887880E74F1970</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E03D796504B7EB0D145CE700</string>
+				<string>F72F5AF6AF51673814AAF445</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>CCF63A16AC207755DAFC157A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-MXTableViewController</string>
+			<key>productName</key>
+			<string>Pods-MXTableViewController</string>
+			<key>productReference</key>
+			<string>AEAA67118F12E84D310F0A14</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>2E78F90E4CCCE3B3A404A5C9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35FE1B52FBCC45253DEF44F7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Tests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3663195C796D8ABB1A9BFFE1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>A3FEBFFE90D9602A1DB69A02</string>
+				<string>9C6B237255C4295D4D3460B0</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>39D3DF269893167BBE4D4E06</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>0698D7CE8D361D3521C67235</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B75266C47B0CE146D5B89652</string>
+				<string>282654DF3987EF5C0B3A19C7</string>
+				<string>250E64B92A6C07FD3B85EA2E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MXTableViewController</string>
+			<key>productName</key>
+			<string>MXTableViewController</string>
+			<key>productReference</key>
+			<string>A1815900F3A8EC2EBE2F72EA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>39DF7678304F9B69FCF8FFBB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4628F6770B14EBFA499D41EE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>3BDFDE8859810E65A1B43681</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-MXTableViewController-MXTableViewController-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BF4614FE181FFDB602F59EE</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>18FB9AADBED4E92DA29D73C6</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-MXTableViewController-MXTableViewController/Pods-MXTableViewController-MXTableViewController-prefix.pch</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>40C2D8A0EECE7D94A22CBA5B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-MXTableViewController.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4628F6770B14EBFA499D41EE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>MXBaseTableView.m</string>
+			<key>path</key>
+			<string>Pod/Classes/MXBaseTableView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>46EEBCB0F32CAEB16CF05043</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-MXTableViewController.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4A94CA2BE617DCB701EC47FB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62C24430EFC91E6912BFE6F0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4C448FA8053BAC43D0A3D46D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9659CF0787573AA4ECF78F9A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4D13277C51C6AD19E2FC5CB7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>72AC3B0C01AA8B9DFAE85544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4D429E65C626A0317E29036E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>711C8C5FE1BC9D9C7856EA64</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4FDD393FB9262CD45DE9180E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DB457EADC5AFEE8D42875953</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>506C63637BFA6B3DF65D0327</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>78255C555C0AACF243F8F1ED</string>
+			<key>buildPhases</key>
+			<array>
+				<string>27ED8F219DDAE7306F11BA0B</string>
+				<string>AEDB26FD2B86B31A938FC03E</string>
+				<string>E6EA38B19B1288211D9A754B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>63C0C1C353067AF7C52569C5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-MXTableViewController-MXTableViewController</string>
+			<key>productName</key>
+			<string>Pods-MXTableViewController-MXTableViewController</string>
+			<key>productReference</key>
+			<string>D3C640579FD4536D93C8A164</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>517FA46708B8C5E73B3A1D7A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-MXTableViewController-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>51A18B9B69BD1C4D4B857F4C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-MXTableViewController-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>52E932203C1FD3260F1ACCBC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B8385E2FE50935AD038D3F47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5B8967EC0E62D92F0191EA57</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>C661E865C847E7AE973E72A0</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>A60D834A83E355520B7F31AB</string>
+			<key>productRefGroup</key>
+			<string>C70519986FD85D6963BE4216</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>39D3DF269893167BBE4D4E06</string>
+				<string>2A75EF4C06EDD400956A4A06</string>
+				<string>506C63637BFA6B3DF65D0327</string>
+				<string>A951178B65FC1BB256ACDE81</string>
+				<string>BC09D3145983C78E1C68FC85</string>
+			</array>
+		</dict>
+		<key>5D1046530261029D13A5ABA7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Tests-MXTableViewController.xcconfig</string>
+			<key>path</key>
+			<string>../Pods-Tests-MXTableViewController/Pods-Tests-MXTableViewController.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5FCBF586110C65B963CBAFE6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>600C9DFE48937D6C1708BB4F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-Tests-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>60580DCA89213AE43D20246F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6C6BAC48622A67725F56230F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62C24430EFC91E6912BFE6F0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>639D613628D3A9CD616E9AD1</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>5B8967EC0E62D92F0191EA57</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>39D3DF269893167BBE4D4E06</string>
+			<key>remoteInfo</key>
+			<string>MXTableViewController</string>
+		</dict>
+		<key>63C0C1C353067AF7C52569C5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>39D3DF269893167BBE4D4E06</string>
+			<key>targetProxy</key>
+			<string>AE5495C0B979F59AABB927B2</string>
+		</dict>
+		<key>650B1661A974F374F54B41A8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CED8F333C564245E2FEA3C80</string>
+				<string>A4723643DCD37A4617059F5B</string>
+				<string>70B17FECA527D15B77E2D093</string>
+				<string>600C9DFE48937D6C1708BB4F</string>
+				<string>FD725EDA3D49C1733434C36C</string>
+				<string>2E78F90E4CCCE3B3A404A5C9</string>
+				<string>83E99D94D24A4411F34781CE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>66502241CACB3742F10C69F1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9519FA396495CA0FDB225307</string>
+				<string>79046BB8288C4CFA55102954</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>697E09541832232461F1A86C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>BC09D3145983C78E1C68FC85</string>
+			<key>targetProxy</key>
+			<string>72A091A36EBEBAC01F9EF8F4</string>
+		</dict>
+		<key>6C6BAC48622A67725F56230F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MXDynamicTableViewController.h</string>
+			<key>path</key>
+			<string>Pod/Classes/MXDynamicTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DA663FD0139C4853F69E055</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B6C16A31115F32CBEE3DF0E2</string>
+				<string>18FB9AADBED4E92DA29D73C6</string>
+				<string>3BDFDE8859810E65A1B43681</string>
+				<string>9B01767D18C3D8B00A350F0C</string>
+				<string>5D1046530261029D13A5ABA7</string>
+				<string>7735D0F6AC53C5C3038890E8</string>
+				<string>9A19675BDF7B0DEF4439266B</string>
+				<string>851C93F14150A9C5BFD6BA09</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/Pods-MXTableViewController-MXTableViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DB557DB5A99C9A66F656469</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6FABBFEFB8CA5137B1BF7D4F</string>
+				<string>19A5CFA46843254E0A0E6602</string>
+				<string>4D13277C51C6AD19E2FC5CB7</string>
+				<string>4D429E65C626A0317E29036E</string>
+				<string>773E432650F4F5B87DCEBCC5</string>
+				<string>60580DCA89213AE43D20246F</string>
+				<string>A31746E747C00058A16F6A9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6FABBFEFB8CA5137B1BF7D4F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F37D64BFBFF140B7B0B4E8A9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7034C5F3A3887880E74F1970</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>89848CCCB4E0A8D7CAE3725E</string>
+				<string>D24DC0BC9FEDA8FBB2B8D533</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>70B17FECA527D15B77E2D093</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-Tests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>711C8C5FE1BC9D9C7856EA64</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MXBaseTableRowProtocol.h</string>
+			<key>path</key>
+			<string>Pod/Classes/MXBaseTableRowProtocol.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>71AA7FBA78DFCD3AFC346AD8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DD5D44A63478BF76F900FC10</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>72A091A36EBEBAC01F9EF8F4</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>5B8967EC0E62D92F0191EA57</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>BC09D3145983C78E1C68FC85</string>
+			<key>remoteInfo</key>
+			<string>Pods-Tests-MXTableViewController</string>
+		</dict>
+		<key>72AC3B0C01AA8B9DFAE85544</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MXBaseTableHeaderProtocol.h</string>
+			<key>path</key>
+			<string>Pod/Classes/MXBaseTableHeaderProtocol.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>73B201C665564069A78EF5F6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F6CCABFF9F1240B8D1F63F87</string>
+				<string>650B1661A974F374F54B41A8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>763E04228BCA578A2CB03470</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>76C37B6BCA5CAA58247E53EF</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>NO</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7735D0F6AC53C5C3038890E8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Tests-MXTableViewController-Private.xcconfig</string>
+			<key>path</key>
+			<string>../Pods-Tests-MXTableViewController/Pods-Tests-MXTableViewController-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>773E432650F4F5B87DCEBCC5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>808FFF6331BA193B19E7B286</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>78255C555C0AACF243F8F1ED</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B791B09E071F30AFFC308F5F</string>
+				<string>3BF4614FE181FFDB602F59EE</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>79046BB8288C4CFA55102954</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>83E99D94D24A4411F34781CE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7C9BA5E5E0D7860E6C9BB0EF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MXBaseTableFooterProtocol.h</string>
+			<key>path</key>
+			<string>Pod/Classes/MXBaseTableFooterProtocol.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7CD2066BA939E41DD778E9FB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CADD7EC00200BE87B5459CF1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>808FFF6331BA193B19E7B286</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MXBaseTableView.h</string>
+			<key>path</key>
+			<string>Pod/Classes/MXBaseTableView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>821A47D53D282E9400FF49F4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BDFDE8859810E65A1B43681</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>83E99D94D24A4411F34781CE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>851C93F14150A9C5BFD6BA09</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Pods-Tests-MXTableViewController-prefix.pch</string>
+			<key>path</key>
+			<string>../Pods-Tests-MXTableViewController/Pods-Tests-MXTableViewController-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>86696E367B7D86D4A912D6EE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-MXTableViewController-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>87DA707BB2CDF09FE407B088</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F37D64BFBFF140B7B0B4E8A9</string>
+				<string>7C9BA5E5E0D7860E6C9BB0EF</string>
+				<string>72AC3B0C01AA8B9DFAE85544</string>
+				<string>711C8C5FE1BC9D9C7856EA64</string>
+				<string>808FFF6331BA193B19E7B286</string>
+				<string>4628F6770B14EBFA499D41EE</string>
+				<string>6C6BAC48622A67725F56230F</string>
+				<string>DD5D44A63478BF76F900FC10</string>
+				<string>293A0D6ACE2272F4A6EA5088</string>
+				<string>DB457EADC5AFEE8D42875953</string>
+				<string>6DA663FD0139C4853F69E055</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MXTableViewController</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>89848CCCB4E0A8D7CAE3725E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>40C2D8A0EECE7D94A22CBA5B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>8D303D2FD0D2306873C7B78A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9659CF0787573AA4ECF78F9A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>919AD9C9877B5902C4F2ABF1</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>NO</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9519FA396495CA0FDB225307</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2E78F90E4CCCE3B3A404A5C9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9659CF0787573AA4ECF78F9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>974ED4079231289B56F0A157</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>39D3DF269893167BBE4D4E06</string>
+			<key>targetProxy</key>
+			<string>639D613628D3A9CD616E9AD1</string>
+		</dict>
+		<key>9A19675BDF7B0DEF4439266B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>Pods-Tests-MXTableViewController-dummy.m</string>
+			<key>path</key>
+			<string>../Pods-Tests-MXTableViewController/Pods-Tests-MXTableViewController-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B01767D18C3D8B00A350F0C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-MXTableViewController-MXTableViewController-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C6B237255C4295D4D3460B0</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7735D0F6AC53C5C3038890E8</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Tests-MXTableViewController/Pods-Tests-MXTableViewController-prefix.pch</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>A1671E6867B314E30C638A44</key>
+		<dict>
+			<key>fileRef</key>
+			<string>711C8C5FE1BC9D9C7856EA64</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A1815900F3A8EC2EBE2F72EA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MXTableViewController.bundle</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A31746E747C00058A16F6A9A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>293A0D6ACE2272F4A6EA5088</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A3FEBFFE90D9602A1DB69A02</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7735D0F6AC53C5C3038890E8</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Tests-MXTableViewController/Pods-Tests-MXTableViewController-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>A4723643DCD37A4617059F5B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A480C070AC0D21139CBD183B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F37D64BFBFF140B7B0B4E8A9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A51BFF8CD3B830DA7A9D5307</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>87DA707BB2CDF09FE407B088</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A60D834A83E355520B7F31AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5FCBF586110C65B963CBAFE6</string>
+				<string>A51BFF8CD3B830DA7A9D5307</string>
+				<string>7CD2066BA939E41DD778E9FB</string>
+				<string>C70519986FD85D6963BE4216</string>
+				<string>73B201C665564069A78EF5F6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A7BC119212D691DC1EABC030</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1A45A353BCFCDF2CD1A05653</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A913BB300241EA8DBEB7BCE8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DB457EADC5AFEE8D42875953</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>A951178B65FC1BB256ACDE81</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>66502241CACB3742F10C69F1</string>
+			<key>buildPhases</key>
+			<array>
+				<string>A7BC119212D691DC1EABC030</string>
+				<string>F20885520414F9ED8F81E221</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>697E09541832232461F1A86C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Tests</string>
+			<key>productName</key>
+			<string>Pods-Tests</string>
+			<key>productReference</key>
+			<string>35FE1B52FBCC45253DEF44F7</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>AE5495C0B979F59AABB927B2</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>5B8967EC0E62D92F0191EA57</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>39D3DF269893167BBE4D4E06</string>
+			<key>remoteInfo</key>
+			<string>MXTableViewController</string>
+		</dict>
+		<key>AEAA67118F12E84D310F0A14</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-MXTableViewController.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>AEDB26FD2B86B31A938FC03E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>4C448FA8053BAC43D0A3D46D</string>
+				<string>EBDC3DAF899F1E5C884CCA11</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AFD07B0F54226F2731729669</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>06C1EF7F428F59D3048D40C7</string>
+				<string>4A94CA2BE617DCB701EC47FB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B08B1819E68E627CCF5988EA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Tests-MXTableViewController.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B6C16A31115F32CBEE3DF0E2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-MXTableViewController-MXTableViewController.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B75266C47B0CE146D5B89652</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B791B09E071F30AFFC308F5F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>18FB9AADBED4E92DA29D73C6</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-MXTableViewController-MXTableViewController/Pods-MXTableViewController-MXTableViewController-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B8385E2FE50935AD038D3F47</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-MXTableViewController-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B9D8EEF12FF255AE65B37F3E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>5B8967EC0E62D92F0191EA57</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>506C63637BFA6B3DF65D0327</string>
+			<key>remoteInfo</key>
+			<string>Pods-MXTableViewController-MXTableViewController</string>
+		</dict>
+		<key>BC09D3145983C78E1C68FC85</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3663195C796D8ABB1A9BFFE1</string>
+			<key>buildPhases</key>
+			<array>
+				<string>264D3D5F52F93F59EECC8DBC</string>
+				<string>AFD07B0F54226F2731729669</string>
+				<string>6DB557DB5A99C9A66F656469</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>974ED4079231289B56F0A157</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Tests-MXTableViewController</string>
+			<key>productName</key>
+			<string>Pods-Tests-MXTableViewController</string>
+			<key>productReference</key>
+			<string>B08B1819E68E627CCF5988EA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>C661E865C847E7AE973E72A0</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>919AD9C9877B5902C4F2ABF1</string>
+				<string>76C37B6BCA5CAA58247E53EF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C70519986FD85D6963BE4216</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A1815900F3A8EC2EBE2F72EA</string>
+				<string>AEAA67118F12E84D310F0A14</string>
+				<string>D3C640579FD4536D93C8A164</string>
+				<string>35FE1B52FBCC45253DEF44F7</string>
+				<string>B08B1819E68E627CCF5988EA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CADD7EC00200BE87B5459CF1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9659CF0787573AA4ECF78F9A</string>
+				<string>62C24430EFC91E6912BFE6F0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCF63A16AC207755DAFC157A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>506C63637BFA6B3DF65D0327</string>
+			<key>targetProxy</key>
+			<string>B9D8EEF12FF255AE65B37F3E</string>
+		</dict>
+		<key>CE8C0A99A438BB109145B182</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-MXTableViewController-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CED8F333C564245E2FEA3C80</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D00561523387EA455ACAA51A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>293A0D6ACE2272F4A6EA5088</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D24DC0BC9FEDA8FBB2B8D533</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>46EEBCB0F32CAEB16CF05043</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>D3C640579FD4536D93C8A164</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-MXTableViewController-MXTableViewController.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>D77E79B08716FEC0DD6FDED5</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DB457EADC5AFEE8D42875953</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>MXStaticTableViewController.m</string>
+			<key>path</key>
+			<string>Pod/Classes/MXStaticTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DD5D44A63478BF76F900FC10</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>MXDynamicTableViewController.m</string>
+			<key>path</key>
+			<string>Pod/Classes/MXDynamicTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E03D796504B7EB0D145CE700</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>52E932203C1FD3260F1ACCBC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E6EA38B19B1288211D9A754B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A480C070AC0D21139CBD183B</string>
+				<string>17FFF0F0721F0F3F63A87083</string>
+				<string>10FFD92005B1B67376C4D369</string>
+				<string>A1671E6867B314E30C638A44</string>
+				<string>E7BF17D853A89AD965E1D9DF</string>
+				<string>EAB61CFA9D32A6B38C83EBC2</string>
+				<string>D00561523387EA455ACAA51A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E7BF17D853A89AD965E1D9DF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>808FFF6331BA193B19E7B286</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EAB61CFA9D32A6B38C83EBC2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6C6BAC48622A67725F56230F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EBDC3DAF899F1E5C884CCA11</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62C24430EFC91E6912BFE6F0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F20885520414F9ED8F81E221</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8D303D2FD0D2306873C7B78A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F37D64BFBFF140B7B0B4E8A9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MXBaseTableCellProtocol.h</string>
+			<key>path</key>
+			<string>Pod/Classes/MXBaseTableCellProtocol.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F51BC8162613FF1F0B03F936</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DD5D44A63478BF76F900FC10</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>F6CCABFF9F1240B8D1F63F87</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>517FA46708B8C5E73B3A1D7A</string>
+				<string>86696E367B7D86D4A912D6EE</string>
+				<string>B8385E2FE50935AD038D3F47</string>
+				<string>CE8C0A99A438BB109145B182</string>
+				<string>51A18B9B69BD1C4D4B857F4C</string>
+				<string>40C2D8A0EECE7D94A22CBA5B</string>
+				<string>46EEBCB0F32CAEB16CF05043</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-MXTableViewController</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-MXTableViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F72F5AF6AF51673814AAF445</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1C661570F13F4C4D390DC998</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FC3AF8844F30F990C4F39821</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4628F6770B14EBFA499D41EE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>FD725EDA3D49C1733434C36C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>5B8967EC0E62D92F0191EA57</string>
+</dict>
+</plist>
