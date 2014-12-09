@@ -1,14 +1,33 @@
 //
 //  FPBaseTableView.m
-//  FinancasPessoais
+//  Copyright (c) 2014 Henrique Morbin - HP Macbook Pro <morbin_@hotmail.com>
 //
-//  Created by Henrique Morbin on 20/11/14.
-//  Copyright (c) 2014 Moolab. All rights reserved.
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
 //
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
 
-#import "FPBaseTableView.h"
+#import "MXBaseTableView.h"
 
-@interface FPBaseTableView ()
+#import "MXBaseTableRowProtocol.h"
+#import "MXBaseTableCellProtocol.h"
+#import "MXBaseTableHeaderProtocol.h"
+#import "MXBaseTableFooterProtocol.h"
+
+@interface MXBaseTableView ()
 
 @property (nonatomic, strong) NSMutableArray *arraySections;
 @property (nonatomic, strong) NSMutableArray *arrayHeaders;
@@ -16,7 +35,7 @@
 
 @end
 
-@implementation FPBaseTableView
+@implementation MXBaseTableView
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
@@ -122,9 +141,9 @@
     [self validateArrays];
     [self validateSection:indexPath.section];
     
-    NSAssert([object conformsToProtocol:@protocol(FPBaseTableRowProtocol)], @"[%s] object(%@) must conform to FPBaseTableRowProtocol", __PRETTY_FUNCTION__, NSStringFromClass([object class]));
+    NSAssert([object conformsToProtocol:@protocol(MXBaseTableRowProtocol)], @"[%s] object(%@) must conform to FPBaseTableRowProtocol", __PRETTY_FUNCTION__, NSStringFromClass([object class]));
     
-    id<FPBaseTableRowProtocol> row = object;
+    id<MXBaseTableRowProtocol> row = object;
     
     return [row getCellIdentifier];
 }
@@ -140,10 +159,10 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
-    NSAssert([cell conformsToProtocol:@protocol(FPBaseTableCellProtocol)], @"[%s] cell(%@) must conform to FBBaseTableCellProtocol", __PRETTY_FUNCTION__, NSStringFromClass([cell class]));
+    NSAssert([cell conformsToProtocol:@protocol(MXBaseTableCellProtocol)], @"[%s] cell(%@) must conform to FBBaseTableCellProtocol", __PRETTY_FUNCTION__, NSStringFromClass([cell class]));
     
     
-    [(id<FPBaseTableCellProtocol>)cell configureCellWithObject:object
+    [(id<MXBaseTableCellProtocol>)cell configureCellWithObject:object
                                                         target:self
                                                      indexPath:indexPath];
     
@@ -166,9 +185,9 @@
     
     id object = self.arraySections[indexPath.section][indexPath.row];
     
-    NSAssert([object conformsToProtocol:@protocol(FPBaseTableRowProtocol)], @"[%s] object(%@) for row must conform to FBBaseTableRowProtocol", __PRETTY_FUNCTION__, NSStringFromClass([object class]));
+    NSAssert([object conformsToProtocol:@protocol(MXBaseTableRowProtocol)], @"[%s] object(%@) for row must conform to FBBaseTableRowProtocol", __PRETTY_FUNCTION__, NSStringFromClass([object class]));
     
-    id<FPBaseTableRowProtocol> row = object;
+    id<MXBaseTableRowProtocol> row = object;
     
     return [row getCellHeight];
 }
@@ -181,9 +200,9 @@
     if (section < self.arrayHeaders.count) {
         id object = self.arrayHeaders[section];
         
-        NSAssert([object conformsToProtocol:@protocol(FPBaseTableHeaderProtocol)], @"[%s] object(%@) for header must conform to FPBaseTableHeaderProtocol", __PRETTY_FUNCTION__, NSStringFromClass([object class]));
+        NSAssert([object conformsToProtocol:@protocol(MXBaseTableHeaderProtocol)], @"[%s] object(%@) for header must conform to FPBaseTableHeaderProtocol", __PRETTY_FUNCTION__, NSStringFromClass([object class]));
         
-        id<FPBaseTableHeaderProtocol> header = object;
+        id<MXBaseTableHeaderProtocol> header = object;
         
         return [header getHeaderHeight];
     }
@@ -198,9 +217,9 @@
     if (section < self.arrayHeaders.count) {
         id object = self.arrayHeaders[section];
         
-        NSAssert([object conformsToProtocol:@protocol(FPBaseTableHeaderProtocol)], @"[%s] object(%@) for header must conform to FPBaseTableHeaderProtocol", __PRETTY_FUNCTION__, NSStringFromClass([object class]));
+        NSAssert([object conformsToProtocol:@protocol(MXBaseTableHeaderProtocol)], @"[%s] object(%@) for header must conform to FPBaseTableHeaderProtocol", __PRETTY_FUNCTION__, NSStringFromClass([object class]));
         
-        id<FPBaseTableHeaderProtocol> header = object;
+        id<MXBaseTableHeaderProtocol> header = object;
         
         return [header getHeaderView];
     }
@@ -216,9 +235,9 @@
     if (section < self.arrayFooters.count) {
         id object = self.arrayFooters[section];
         
-        NSAssert([object conformsToProtocol:@protocol(FPBaseTableFooterProtocol)], @"[%s] object(%@) for footer must conform to FPBaseTableFooterProtocol", __PRETTY_FUNCTION__, NSStringFromClass([object class]));
+        NSAssert([object conformsToProtocol:@protocol(MXBaseTableFooterProtocol)], @"[%s] object(%@) for footer must conform to FPBaseTableFooterProtocol", __PRETTY_FUNCTION__, NSStringFromClass([object class]));
         
-        id<FPBaseTableFooterProtocol> header = object;
+        id<MXBaseTableFooterProtocol> header = object;
         
         return [header getFooterHeight];
     }
@@ -233,9 +252,9 @@
     if (section < self.arrayFooters.count) {
         id object = self.arrayFooters[section];
         
-        NSAssert([object conformsToProtocol:@protocol(FPBaseTableFooterProtocol)], @"[%s] object(%@) for footer must conform to FPBaseTableFooterProtocol", __PRETTY_FUNCTION__, NSStringFromClass([object class]));
+        NSAssert([object conformsToProtocol:@protocol(MXBaseTableFooterProtocol)], @"[%s] object(%@) for footer must conform to FPBaseTableFooterProtocol", __PRETTY_FUNCTION__, NSStringFromClass([object class]));
         
-        id<FPBaseTableFooterProtocol> header = object;
+        id<MXBaseTableFooterProtocol> header = object;
         
         return [header getFooterView];
     }

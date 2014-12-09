@@ -1,21 +1,35 @@
 //
 //  FPStaticTableViewController.m
-//  FinancasPessoais
+//  Copyright (c) 2014 Henrique Morbin - HP Macbook Pro <morbin_@hotmail.com>
 //
-//  Created by Henrique Morbin on 23/11/14.
-//  Copyright (c) 2014 Moolab. All rights reserved.
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
 //
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
 
-#import "FPStaticTableViewController.h"
-#import "FPBaseTableView.h"
+#import "MXStaticTableViewController.h"
+#import "MXBaseTableView.h"
 
-@interface FPStaticTableViewController ()
+@interface MXStaticTableViewController ()
 {
-    FPBaseTableView *baseTableView;
+    MXBaseTableView *baseTableView;
 }
 @end
 
-@implementation FPStaticTableViewController
+@implementation MXStaticTableViewController
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
@@ -32,7 +46,7 @@
     
     //arrayRows = [NSMutableArray new];
     //[arrayRows addObject:[NSMutableArray new]];
-    baseTableView = [[FPBaseTableView alloc] init];
+    baseTableView = [[MXBaseTableView alloc] init];
     
     
     [self configBarButtons];
@@ -62,12 +76,12 @@
 
 - (void)reloadData
 {
-    NSLogWithPrettyFunction(@"reloadNetworkData not implemented");
+    NSLog(@"[%s] reloadNetworkData not implemented", __PRETTY_FUNCTION__);
 }
 
 - (void)addNewData
 {
-    NSLogWithPrettyFunction(@"addNewData not implemented");
+    NSLog(@"[%s] addNewData not implemented", __PRETTY_FUNCTION__);
 }
 
 #pragma mark - Manipulation Data
